@@ -7,12 +7,12 @@ variable "aws_region" {
 
 variable "ec2_task_execution_role_name" {
     description = "ECS task execution role name"
-    default = "myEcsTaskExecutionRole"
+    default = "myEcsTaskExecutionRole1"
 }
 
 variable "ecs_auto_scale_role_name" {
     description = "ECS auto scale role name"
-    default = "myEcsAutoScaleRole"
+    default = "myEcsAutoScaleRole2"
 }
 
 variable "az_count" {
@@ -22,12 +22,12 @@ variable "az_count" {
 
 variable "app_image" {
     description = "Docker image to run in the ECS cluster"
-    default = "frappe/erpnext:latest"
+    default = "nginxdemos/hello"
 }
 
 variable "app_port" {
     description = "Port exposed by the docker image to redirect traffic to"
-    default = 3000
+    default = 80
 
 }
 
